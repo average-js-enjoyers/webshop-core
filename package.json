@@ -1,0 +1,69 @@
+{
+  "name": "average-js-webshop-backend",
+  "version": "1.0.0",
+  "description": "Average JS Webshop backend.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "start:prod": "node server.js",
+    "debug": "ndb server.js",
+    "data:import": "node ./config/mongodb/seeder.js",
+    "data:destroy": "node ./config/mongodb/seeder.js -d"
+  },
+  "engines": {
+    "node": "^18.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/average-js-enjoyers/average-js-webshop.git"
+  },
+  "author": "Average JS Enjoyers",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/average-js-enjoyers/average-js-webshop/issues"
+  },
+  "homepage": "https://github.com/average-js-enjoyers/average-js-webshop#readme",
+  "devDependencies": {
+    "@faker-js/faker": "^8.3.1",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.52.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsx-a11y": "^6.7.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^5.0.1",
+    "eslint-plugin-react": "^7.33.2",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-mongo-sanitize": "^1.3.2",
+    "express-rate-limit": "^3.5.0",
+    "express-validator": "^7.0.1",
+    "firebase-admin": "^11.11.0",
+    "googleapis": "^128.0.0",
+    "helmet": "^3.16.0",
+    "hpp": "^0.2.2",
+    "jimp": "^0.22.10",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.6.2",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.5-lts.1",
+    "node-clipboardy": "^1.0.3",
+    "nodemailer": "^6.1.1",
+    "openai": "^4.17.4",
+    "puppeteer": "^21.5.2",
+    "sharp": "^0.32.6",
+    "speakeasy": "^2.0.0",
+    "validator": "^13.11.0",
+    "xss-clean": "^0.1.1"
+  }
+}
