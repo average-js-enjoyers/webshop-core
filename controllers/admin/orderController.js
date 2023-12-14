@@ -1,5 +1,7 @@
 const Order = require('../../models/order.model');
-const factory = require('../handlerFactory');
+const factory = require('../../middlewares/handlerFactory');
+const OrderService = require('../../services/admin/orderService');
+const OrderServiceInstance = new OrderService();
 
 exports.getAllOrders = factory.getAll(Order);
 exports.getOrder = factory.getOne(Order, [

@@ -1,5 +1,5 @@
 const Product = require('../../models/product.model');
-const factory = require('../handlerFactory');
+const factory = require('../../middlewares/handlerFactory');
 
 exports.getAllProducts = factory.getAll(Product);
 exports.getProduct = factory.getOne(Product, [
