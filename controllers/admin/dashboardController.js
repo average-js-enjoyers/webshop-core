@@ -3,7 +3,7 @@ const catchAsync = require('../../services/catchAsync');
 const AppError = require('../../services/appError');
 const dashboard = require('../../services/admin/dashboard');
 const Order = require('../../models/order.model');
-const factory = require('../handlerFactory');
+const factory = require('../../middlewares/handlerFactory');
 
 exports.getAggregates = catchAsync(async (req, res, next) => {
   const elements = req.body;

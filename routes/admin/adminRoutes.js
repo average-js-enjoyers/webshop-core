@@ -3,6 +3,7 @@ const authController = require('../../controllers/admin/authController');
 const twoFactorController = require('../../controllers/admin/twoFactorController');
 const dashboardRouter = require('./dashboardRoutes');
 const orderRouter = require('./orderRoutes');
+const productRouter = require('./productRoutes');
 const authRoutes = require('./authRoutes');
 const twoFactorRouter = require('./twoFactorRoutes');
 const puppeteer = require('puppeteer');
@@ -40,5 +41,6 @@ router.use('/two-factor', twoFactorRouter);
 router.use(twoFactorController.protect2fa);
 router.use('/dashboard', dashboardRouter);
 router.use('/orders', orderRouter);
+router.use('/products', productRouter);
 
 module.exports = router;
