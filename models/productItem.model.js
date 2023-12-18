@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+const Variation = require('./variation.model');
+
 const { Schema } = mongoose;
 
 const ProductItemSchema = new Schema({

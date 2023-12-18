@@ -4,6 +4,10 @@ const twoFactorController = require('../../controllers/admin/twoFactorController
 const dashboardRouter = require('./dashboardRoutes');
 const orderRouter = require('./orderRoutes');
 const productRouter = require('./productRoutes');
+const productItemRouter = require('./productItemRoutes');
+const propertyRouter = require('./propertyRoutes');
+const variationRouter = require('./variationRoutes');
+const shippingMethodRouter = require('./shippingMethodRoutes');
 const authRoutes = require('./authRoutes');
 const twoFactorRouter = require('./twoFactorRoutes');
 const puppeteer = require('puppeteer');
@@ -40,7 +44,11 @@ router.use(authController.protect);
 router.use('/two-factor', twoFactorRouter);
 router.use(twoFactorController.protect2fa);
 router.use('/dashboard', dashboardRouter);
-router.use('/orders', orderRouter);
-router.use('/products', productRouter);
+router.use('/order', orderRouter);
+router.use('/product', productRouter);
+router.use('/product-item', productItemRouter);
+router.use('/property', propertyRouter);
+router.use('/variation', variationRouter);
+router.use('/shipping-method', shippingMethodRouter);
 
 module.exports = router;
