@@ -12,6 +12,7 @@ const addressRouter = require('./addressRoutes');
 const userAccountRouter = require('./userAccountRoutes');
 const adminAccountRouter = require('./adminAccountRoutes');
 const categoryRouter = require('./categoryRoutes');
+const reviewRouter = require('./reviewRoutes');
 const authRoutes = require('./authRoutes');
 const twoFactorRouter = require('./twoFactorRoutes');
 const puppeteer = require('puppeteer');
@@ -58,5 +59,6 @@ router.use('/address', addressRouter);
 router.use('/user-account', userAccountRouter);
 router.use('/category', categoryRouter);
 router.use('/admin-account', adminAccountRouter);
+router.use('/review', reviewRouter);
 
 module.exports = router;
