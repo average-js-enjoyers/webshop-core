@@ -7,7 +7,7 @@ const xss = require('xss-clean');
 const cors = require('cors');
 const hpp = require('hpp');
 
-const AppError = require('./services/appError');
+const { AppError } = require('./services/appError');
 const globalErrorHandler = require('./middlewares/handlerError');
 const userRouter = require('./routes/user/userRoutes');
 const adminRouter = require('./routes/admin/adminRoutes');
