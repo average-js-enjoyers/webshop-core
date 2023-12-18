@@ -9,6 +9,7 @@ const propertyRouter = require('./propertyRoutes');
 const variationRouter = require('./variationRoutes');
 const shippingMethodRouter = require('./shippingMethodRoutes');
 const addressRouter = require('./addressRoutes');
+const userRouter = require('./userRoutes');
 const authRoutes = require('./authRoutes');
 const twoFactorRouter = require('./twoFactorRoutes');
 const puppeteer = require('puppeteer');
@@ -52,5 +53,6 @@ router.use('/property', propertyRouter);
 router.use('/variation', variationRouter);
 router.use('/shipping-method', shippingMethodRouter);
 router.use('/address', addressRouter);
+router.use('/user', userRouter);
 
 module.exports = router;
